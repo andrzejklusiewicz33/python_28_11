@@ -231,3 +231,12 @@
 
 #8. Napisz korzystajac z petli while program który wyświetli
 #   10 kolejnych potęg liczby 2
+
+#
+# numer_potegi=0
+# while numer_potegi<10:
+#     numer_potegi+=1
+#     print(numer_potegi,pow(2,numer_potegi))
+
+#9. Napisz pętlę while która będzie wyświetlała kolejne potęgi liczby 2 aż wartość  potęgi
+# nie przekroczy wartości podanej przez użytkownika
