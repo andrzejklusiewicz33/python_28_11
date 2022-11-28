@@ -333,3 +333,31 @@
 
 #13. Napisz program który zliczy ilość wystąpień małej lub dużej wersji ciagu tekstowego podanego przez użytkownika
 # w pliku którego nazwę również poda użytkownik.
+
+# plik=input('podaj nazwę pliku:\n')
+# szukane=input('podaj szukaną frazę:\n')
+# calosc=open(plik,encoding='utf-8').read().lower()
+# ile=calosc.count(szukane.lower())
+# print(f'ile={ile}')
+
+
+# plik=input('podaj nazwę pliku:\n')
+# szukane=input('podaj szukaną frazę:\n')
+# ile=open(plik,encoding='utf-8').read().lower().count(szukane.lower())
+# print(f'ile={ile}')
+
+
+#
+# x=open('tadzio.txt',encoding='utf-8').read().lower().count('a')
+# print(x)
+
+#14. Napisz wyszukiwarkę plikową. Wyszukiwarka powinna odebrać od użytkownika
+ # poszukiwaną frazę, oraz nazwę pliku. Wyszukiwarka powinna wyświetlić
+ #  linie w których znalazła poszukiwaną frazę wraz z numerem linii. Wyszukiwarka po
+ #    odebraniu danych od uzyszkodnika powinna wyswietlic jakiej frazy
+ #  i  jakim pliku szuka. Wyszukiwarka powinna być nieczula na wielkosc liter.
+
+if "baBa".lower() in "siała baba maK".lower():
+     print('jest')
+else:
+     print('nie ma')
