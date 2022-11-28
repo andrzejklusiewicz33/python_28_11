@@ -181,3 +181,26 @@
 
 #6. Wydrukuj liczby w zakresie 1-100 wypisujac obok czy dana liczba jest
 #  parzysta czy nieparzysta
+#
+# for e in range(1,101):
+#     if e%2==0:
+#         print(f'{e} jest parzyste')
+#     else:
+#         print(f'{e} jest nieparzyste')
+#
+# print(e)
+    #print(e)
+
+# def funkcja():
+#     zmienna=0
+#7. Napisz symulator lokaty. Symulator ma przyjmować przez zmienne:
+  # - kwotę lokaty
+  # - oprocentowanie w skali roku
+  # - ilość miesięcy na jaką zakladamy lokatę
+  # Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc
+  # oraz ile mamy aktualnie zgromadzone na koncie po doliczeniu odsetek.
+  # Kapitalizacja comiesięczna
+
+kwota=100000
+oprocentowanie=0.08
+ilosc_miesiecy=24
