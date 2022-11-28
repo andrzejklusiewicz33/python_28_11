@@ -449,3 +449,68 @@
 
 #16. Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
 # Połącz te dwie listy do jednej i wyswietl na konsoli (extend albo *lista)
+
+# print(lista.extend(inna))
+# lista.extend(inna)
+# print(lista)
+
+# import random
+# lista1=[]
+# lista2=[]
+# for x in range(10):
+#     lista1.append(random.randint(1,10))
+#     lista2.append(random.randint(1, 10))
+# print(lista1)
+# print(lista2)
+# lista3=[*lista1,*lista2]
+# print(lista3)
+# lista4=lista1+lista2
+# print(lista4)
+# lista1.extend(lista2)
+# print(lista1)
+
+# import random
+# lista1=[]
+# lista2=[]
+#
+# for x in range(10):
+#     lista1.append(random.randint(1,10))
+#
+# for x in range(10):
+#     lista2.append(random.randint(1, 10))
+#
+# print(lista1)
+# print(lista2)
+# lista3=[*lista1,*lista2]
+# print(lista3)
+# lista4=lista1+lista2
+# print(lista4)
+# lista1.extend(lista2)
+# print(lista1)
+#
+# lista=[
+#     [1,'A'],
+#     [2,'B'],
+#     [3,'C']
+# ]
+#
+# print(lista)
+# for e in lista:
+#     print(e)
+#
+# lista=[]
+# for x in range(1,11):
+#     podelement=[x,x*10]
+#     lista.append(podelement)
+#
+# print(lista)
+
+#
+# lista=[]
+# for x in range(1,11):
+#     lista.append( [x,x*10] )
+#
+# print(lista)
+
+#17. Korzystajac z petli stworz liste zawierajaca elementy same bedace listami.
+# Kazdy taki element ma zawierac numer potegi oraz wartosc tej potegi dla liczby 2.
