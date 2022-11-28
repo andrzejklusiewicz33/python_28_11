@@ -26,3 +26,30 @@
 
 #1. Napisz program który przyjmie od użyszkodnika imię oraz nazwisko, a następnie
 #   wypisze na konsoli komunikat typu "Witaj TwojeImie TwojeNazwisko!"
+#
+# imie=input('podaj imię:\n')
+# nazwisko=input('podaj nazwisko:\n')
+# print(f'Witaj {imie} {nazwisko}!')
+# print('Witaj {} {}!'.format(imie,nazwisko))
+# print('Witaj '+imie+" "+nazwisko+"!")
+
+#print(imie+" "+nazwisko)
+
+# x=input('dej x:\n')
+# y=input('dej y:\n')
+# print(x,type(x))
+# print(y,type(y))
+# #print(x/y)
+
+# x=float(input('dej x:\n'))
+# y=float( input('dej y:\n') )
+# print(x,type(x))
+# print(y,type(y))
+# wynik=round(x/y,2)
+# print(wynik)
+# print(pow(2,10))
+
+#2. BMI= masa/(wzrost*wzrost) . Napisz program który odbierze od użytkownika jego masę w kilogramach
+# i wzrost w metrach, wyliczy i wypisze BMI.
+
+#wzrost=1.76
