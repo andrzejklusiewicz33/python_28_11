@@ -398,3 +398,54 @@
 
 #15. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
 #    Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
+#
+# lista=[]
+# for x in range(1,11):
+#     lista.append(pow(2,x))
+#
+# for e in lista:
+#     print(e)
+
+# lista=[1,2,3]
+# print(lista)
+# print(*lista)
+#
+# lista1=[1,2,3]
+# lista2=[4,5,6]
+# lista3=lista1+lista2
+# print(lista3)
+# print(*lista1,*lista2)
+# lista3=[*lista1,*lista2]
+# print(lista3)
+
+# lista1=[1,2,3]
+# lista2=[4,5,6]
+# lista1.extend(lista2)
+# print(lista1)
+
+#
+# lista1=[1,2,3]
+# lista2=[4,5,6]
+# lista3=[*lista1,*lista2]
+# print(lista3)
+
+#
+# lista1=[1,2,3,4]
+# print(lista1[3])
+# print(lista1[0:3])
+
+# lista1=[1,2,3,4]
+# lista2=lista1
+# lista1.clear()
+# print(lista1)
+# print(lista2)
+
+# lista1=[1,2,3,4]
+# lista2=lista1.copy()
+# lista1.clear()
+# print(lista1)
+# print(lista2)
+
+
+#16. Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
+# Połącz te dwie listy do jednej i wyswietl na konsoli (extend albo *lista)
