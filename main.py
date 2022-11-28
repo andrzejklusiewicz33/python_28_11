@@ -356,8 +356,45 @@
  #  linie w których znalazła poszukiwaną frazę wraz z numerem linii. Wyszukiwarka po
  #    odebraniu danych od uzyszkodnika powinna wyswietlic jakiej frazy
  #  i  jakim pliku szuka. Wyszukiwarka powinna być nieczula na wielkosc liter.
+#
+# if "baBa".lower() in "siała baba maK".lower():
+#      print('jest')
+# else:
+#      print('nie ma')
+#
+# tekst='default'
+# tekst=input('dupa:\n')
 
-if "baBa".lower() in "siała baba maK".lower():
-     print('jest')
-else:
-     print('nie ma')
+
+# plik=input('nazwa pliku:\n')
+# szukane=input('szukane:\n')
+# x=0
+# for linia in open(plik,encoding='utf-8'):
+#     x+=1
+#     if szukane.lower() in linia.lower():
+#         print(x,linia.strip())
+
+
+# plik=input('nazwa pliku:\n')
+# szukane=input('szukane:\n')
+# x=0
+# for linia in open(plik,encoding='utf-8'):
+#     x+=1
+#     if szukane.lower() in linia.lower().split():
+#         print(x,linia.strip())
+
+
+#przerwa do 14:52
+
+# lista=[]
+# lista=[1,2,3,'nietoperz','toperz']
+#
+# lista=[]
+# for x in range(1,11):
+#     lista.append(x)
+# print(lista)
+# for element in lista:
+#     print(element)
+
+#15. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
+#    Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
