@@ -240,3 +240,21 @@
 
 #9. Napisz pętlę while która będzie wyświetlała kolejne potęgi liczby 2 aż wartość  potęgi
 # nie przekroczy wartości podanej przez użytkownika
+
+
+# max=int(input('daj maksymalna wartosc:\n'))
+# p=0
+# wp=0
+# while wp<max:
+#     print(p,wp)
+#     p+=1
+#     wp=pow(2,p)
+
+
+
+#10. Napisz program który będzie dodawał kolejne losowe wartości z zakresu
+#od 1 do 10 do zmiennej suma, tak dlugo az suma nie osiagnie wartosci wiekszej od wartosci podanej przez uzytkownika
+
+import random
+print(random.random())
+print(random.randint(1,100))
