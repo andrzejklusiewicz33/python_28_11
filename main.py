@@ -254,7 +254,48 @@
 
 #10. Napisz program który będzie dodawał kolejne losowe wartości z zakresu
 #od 1 do 10 do zmiennej suma, tak dlugo az suma nie osiagnie wartosci wiekszej od wartosci podanej przez uzytkownika
+#
+# import random
+# print(random.random())
+# print(random.randint(1,100))
+#
+# #x=random.randint(1,10)
+#
+# suma=0
+# while suma<100:
+#     print('dupa')
+# import random
+# max=int(input('podaj maksymalną wartość:\n'))
+# suma=0
+# while suma<max:
+#     wylosowane=random.randint(1,10)
+#     suma+=wylosowane
+#     print(wylosowane,suma)
 
-import random
-print(random.random())
-print(random.randint(1,100))
+#przerwa obiadowa do 13:27
+
+# tekst="siała BABA mak, nie wiedziała jak i dostała 10 lat bo nie płaciła VAT"
+# print(tekst)
+# print(tekst.upper())
+# print(tekst.lower())
+# print(tekst.replace('a','X'))
+# print(tekst.replace('a','X').replace('A',"X"))
+# print(tekst.lower().replace('a','X'))
+# print(len(tekst))
+# lista=[1,2,3,4]
+# print(len(lista))
+# print("hajs "*10)
+# if "BaBa".lower() in tekst.lower():
+#     print('jest')
+# else:
+#     print('nie ma')
+# print(tekst.title())
+# print(tekst.count('a'))
+# print(tekst.lower().count('a'))
+# if "Java">"Python":
+#     print('chyba śnisz')
+# else:
+#     print('no jaha')
+
+#11. Napisz program który przyjmie od użyszkodnika ciąg tekstowy a następnie usunie z niego znaki ,.!?
+# i wyświetli powiększony do dużych liter na konsoli
