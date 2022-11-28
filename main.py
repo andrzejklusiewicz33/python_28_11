@@ -116,8 +116,50 @@
 
 #4. Rozbuduj swój program do bmi w taki sposob by poza wyswietleniem obliczonego bmi
 #  wyświetlił nam również odpowiedni opis wg skali z Wikipedii.
+#
+# wzrost = float(input('podaj wzrost w metrach:\n'))
+# masa = float(input('podaj masę w kilogramach:\n'))
+# bmi=round(masa/pow(wzrost,2),2)
+# print(f'bmi={bmi}')
+# if bmi<16:
+#     print('wygodzenie')
+# elif bmi<17:
+#     print('wychudzenie')
+# elif bmi<18.5:
+#     print('niedowaga')
+# elif bmi<25:
+#     print('masa ok')
+# elif bmi<30:
+#     print('nadwaga')
+# elif bmi<35:
+#     print('przypakowanie I stopnia')
+# elif bmi<40:
+#     print('przypakowanie II stopnia')
+# else:
+#     print('przypakowanie III stopnia')
 
-wzrost = float(input('podaj wzrost w metrach:\n'))
-masa = float(input('podaj masę w kilogramach:\n'))
-bmi=round(masa/pow(wzrost,2),2)
-print(f'bmi={bmi}')
+#przerwa do 11:31
+
+# for x in range(10):
+#     print('siema!')
+# #
+# # while 1==1:
+# #     print('siema!')
+#
+# while True:
+#     print('prawda!')
+
+# for x in range(3):
+#     print('wykonanie!')
+#
+# for x in range(3):
+#     print(f'wykonanie {x}')
+
+
+# for x in range(1,11):
+#     print(f'wykonanie {x}')
+#
+# for x in range(1,11,2):
+#     print(f'wykonanie {x*10}')
+
+#5. Wyświetl 20 kolejnych potęg liczby 2
