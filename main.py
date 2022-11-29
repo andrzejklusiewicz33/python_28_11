@@ -874,3 +874,40 @@
 
 
 #PRZERWA OBIADOWA DO 13:29
+
+# lista=[1,2,3]
+# krotka=(5,6,1,2,3)
+#print(sorted(krotka))
+
+# lista=[1,2,3]
+# krotka=(5,6,1,2,3)
+# print(type(lista),type(krotka))
+
+
+# lista=[1,2,3]
+# krotka=tuple(lista)
+# print(krotka,type(krotka))
+# lista=list(krotka)
+# print(lista,type(lista))
+#
+# krotka=(4,6,1,2,4)
+# krotka=tuple(sorted(krotka))
+# print(krotka)
+
+
+# krotka=(4,6,1,2,4)
+# lista=list(krotka)
+# lista.sort()
+# krotka=tuple(lista)
+# print(krotka)
+#
+# krotka=(4,6,1,2,4)
+# for e in krotka:
+#     print(e)
+#
+# print('index 3:',krotka[3])
+# print(krotka[0:4])
+
+#27. Stwórz dwie krotki. Jedna ma zawierać 10 losowych liczb zakresu 1-10, druga 10 losowych liczb zakresu 11-20.
+# Stwórz trzecią krotkę która ma zawierać dane z obu krotek. Trzecią krotkę wypisz na konsoli
+#trzecia=(*pierwsza,*druga)
