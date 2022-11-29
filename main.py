@@ -1074,8 +1074,8 @@
 #
 # for  k in sl:
 #     print(k,sl[k])
-slowa=[]
-calosc=open('').read()
+# slowa=[]
+# calosc=open('').read()
 
 #33. Napisz system który zwróci nam ilość wystąpień każdego ze słow w pliku w postaci listy krotek.
 # [  (slowo,ilosc_wystapien),(slowo,ilosc_wystapien)   ]. Nazwa pliku ma zostać przekazana przez zmienną.
@@ -1086,3 +1086,12 @@ calosc=open('').read()
 #       w słowniku. Jeśli nie ma to dodaj do słownika wpis o kluczu takim jak sprawdzane słowo i wartości 1
 #       dla ilości wystąpień. Jeśli takie słowo pojawia się już w kluczach słownika to trzeba zwiększyc wartośc o 1
 #    c) Przepakuj dane ze słownika do listy i posortuj.
+#
+# tekst='dupa !?,.....!!!! dupa'
+# niechciane=['!','?','.',',']
+# for n in niechciane:
+#     tekst=tekst.replace(n,'')
+# print(tekst)
+#
+# for x in range(85,120):
+#     print(chr(x))
