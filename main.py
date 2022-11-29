@@ -920,3 +920,27 @@
 # print(k3,type(k3))
 
 #28. Napisz kod ktora wyświetli w postaci listy krotek zawartość pliku dane.csv
+#
+# lista=[tuple(e.strip().split(';')) for e in open('dane.csv',encoding='utf-8')]
+# print(lista)
+# for e in lista:
+#     print(e)
+#
+# zbior={1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4}
+# zbior.add(5)
+# zbior.add(6)
+# print(zbior)
+# for z in zbior:
+#     print(z)
+
+# z1={1,2,3,4,5}
+# z2={4,5,6,7,8}
+# print('część wspólna: ',z1.intersection(z2))
+# print('część wspólna: ',list(z1.intersection(z2)))
+# print('suma zbiorów:',z1.union(z2))
+# print('roznica z1-z2',z1-z2)
+# print('roznica z2-z1',z2-z1)
+
+
+#29. Wygeneruj dwa zestawy, dodaj do nich po 20 (w przypadku duplikatów lista może być mniejsza niż 20 elementów)
+# losowych liczb z zakresu 1-40. Wyswietl ich sumę, różnicę i część wspólną
