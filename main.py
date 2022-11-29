@@ -944,3 +944,61 @@
 
 #29. Wygeneruj dwa zestawy, dodaj do nich po 20 (w przypadku duplikatów lista może być mniejsza niż 20 elementów)
 # losowych liczb z zakresu 1-40. Wyswietl ich sumę, różnicę i część wspólną
+# import random
+# z1=set()
+# z2=set()
+# for x in range(20):
+#     z1.add(random.randint(1,40))
+#     z2.add(random.randint(1,40))
+# print(z1)
+# print(z2)
+#
+# z1=set([1,2,3,4])
+# print(z1)
+
+# import random
+# z1={random.randint(1,40) for e in range(10)}
+# print(z1,type(z1))
+
+#import random
+# z1=set()
+# z2=set()
+# for x in range(20):
+#     z1.add(random.randint(1,40))
+#     z2.add(random.randint(1,40))
+# print(z1)
+# print(z2)
+
+
+# import random
+# z1=set([random.randint(1,40) for e in range(20)])
+# z2=set([random.randint(1,40) for e in range(20)])
+# print(type(z1))
+
+
+# import random
+# z1={random.randint(1,40) for e in range(20)}
+# z2={random.randint(1,40) for e in range(20)}
+# print(z1)
+# print(z2)
+# print(z1.intersection(z2))
+# print(z1.union(z2))
+# print(z1.difference(z2))
+# print(z2.difference(z1))
+
+# l1=[
+#     (1,'A'),
+#     (2,'V'),
+#     (1,'A')
+# ]
+# print(l1)
+# z1=set(l1)
+# print(z1)
+#
+# lista=[1,1,1,2,2,2,2,3,3,3]
+# z1=set(lista)
+# lista=list(z1)
+# print(lista)
+
+#30. Zduplikuj jeden z wierszy w pliku dane.csv. Napisz kod który zwróci do postaci
+# listy krotek zawartość tego pliku z danymi bez powtórek.
