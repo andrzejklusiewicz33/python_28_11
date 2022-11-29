@@ -790,5 +790,9 @@
 #25.  Wyświetl na konsoli linia po linii dane z pliku dane.csv ale posortowane  malejąco wg. bmi
 wynik=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
 for w in wynik:
-    w.append(None)
+    bmi=round(float(w[4])/pow(float(w[3]),2),2)
+    w.append('dupa')
     print(w)
+
+# lista=[1,4,1,2,3]
+# lista.sort(reverse=True,key=lambda e:e)
