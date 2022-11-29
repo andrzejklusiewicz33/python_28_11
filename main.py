@@ -1002,3 +1002,40 @@
 
 #30. Zduplikuj jeden z wierszy w pliku dane.csv. Napisz kod który zwróci do postaci
 # listy krotek zawartość tego pliku z danymi bez powtórek.
+#
+# wynik=[tuple(e.strip().split(';')) for e in open('dane.csv',encoding='utf-8')]
+# zestaw=set(wynik)
+# wynik=list(zestaw)
+# for w in wynik:
+#     print(w)
+
+
+# wynik=list(set([tuple(e.strip().split(';')) for e in open('dane.csv',encoding='utf-8')]))
+# for w in wynik:
+#     print(w)
+
+#for w in list(set([tuple(e.strip().split(';')) for e in open('dane.csv',encoding='utf-8')])): print(w)
+
+#przerwa do 14:44
+#
+# sl=dict()
+# sl['klucz1']='jakaś wartość'
+# sl['inny_klucz']=1234
+# sl['cos']=[1,2,3,4,5,6]
+#
+# print(sl['klucz1'])
+#
+# for key in sl:
+#     print(key,sl[key])
+#
+# if 'klucz1' in sl:
+#     print('mamy taki klucz')
+# else:
+#     print('nie mamy takiego klucza')
+
+# #31. Stwórz plik ustawienia.txt i umieść w nim poniższe dane
+# encoding;utf-8
+# timezone;-2
+# color;black
+# Następnie wczytaj dane do słownika w ten sposób by pierwsza kolumna stanowila klucze a druga przypisane do nich
+# wartości. Przeiteruj po słowniku i wypisz klucze oraz przypisane do nich wartości
