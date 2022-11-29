@@ -569,6 +569,19 @@
 
 #19. Korzystając z list składanych wygeneruj listę 10 elementow której każdy element również będzie listą.
 # Pierwszy element tej podlisty to numer potegi, a drugi to wartosc tej potegi dla liczby 2
+#
+# lista=[ [e,pow(2,e)] for e in range(1,11)]
+# print(lista)
+# for linia in open('dane.csv',encoding='utf-8'):
+#     print(linia.strip())
 
-lista=[ [e,e*1000] for e in range(1,11)]
-print(lista)
+#
+# linia='1;Stefan;Burczymucha;1.76;80'
+# lista=linia.split(';')
+# print(lista[1])
+# print(lista)
+# print(lista[3]*2,type(lista[3]))
+# print('1.76'*2)
+# print(float(lista[3])*2)
+
+#20. Napisz program który z pliku dane.csv wyświetli powiekszone imiona i nazwiska oraz wzrost i masę
