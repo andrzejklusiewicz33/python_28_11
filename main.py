@@ -847,12 +847,30 @@
 # import os
 # sciecha=os.path.join('e:\\','katalog','podkatalog')
 # print(sciecha)
+#
+# import os
+# szukane='oracle'
+# for w in os.walk('e:\\'):
+#     katalogi=w[1]
+#     for k in katalogi:
+#         if szukane.lower() in k.lower():
+#             print( os.path.join(w[0],k) )
+#     pliki=w[2]
+#     for p in pliki:
+#         if szukane.lower() in p.lower():
+#             print(os.path.join(w[0],p))
 
-import os
-szukane='oracle'
-for w in os.walk('e:\\'):
-    #print(w)
-    katalogi=w[1]
-    for k in katalogi:
-        if szukane.lower() in k.lower():
-            print( os.path.join(w[0],k) )
+
+# import os
+# szukane=input('czego szukasz:\n')
+# start=input('podaj katalog startowy:\n')
+# for w in os.walk(start):
+#     for k in w[1]:
+#         if szukane.lower() in k.lower():
+#             print( os.path.join(w[0],k) )
+#     for p in w[2]:
+#         if szukane.lower() in p.lower():
+#             print(os.path.join(w[0],p))
+
+
+#PRZERWA OBIADOWA DO 13:29
