@@ -642,9 +642,63 @@
 
 #22. Dla każdego wpisu w pliku dane.csv wyświetl na konsoli dane o
 #    id, imieniu,nazwisku, wzroscie,masie oraz obliczonym bmi zawodnika
+#
+# lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# for l in lista:
+#     wzrost=float(l[3])
+#
+#     print(l)
 
-lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
-for l in lista:
-    bmi=None
-    print(l)
+# print('tekst'+'tekst')
+# print('tekst'+str(1))
 
+#
+# lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# for l in lista:
+#     w=float(l[3])
+#     m=float(l[4])
+#     bmi=round(m/pow(w,2),2)
+#     print(l,bmi)
+
+#
+# lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# for l in lista:
+#     w=float(l[3])
+#     m=float(l[4])
+#     bmi=round(m/pow(w,2),2)
+#     l.append(bmi)
+#     print(l)
+
+#
+# lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# for l in lista:
+#     w=float(l[3])
+#     m=float(l[4])
+#     bmi=round(m/pow(w,2),2)
+#     print(*l,bmi)
+
+#
+# lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# for l in lista:
+#     bmi=round(float(l[4])/pow(float(l[3]),2),2)
+#     print(*l,bmi)
+
+# for l in [e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]:
+#     bmi=round(float(l[4])/pow(float(l[3]),2),2)
+#     print(*l,bmi)
+
+#for l in [e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]: print(*l,round(float(l[4])/pow(float(l[3]),2),2))
+
+# lista=[1,6,5,4,2,3,1]
+# inna=sorted(lista)
+# print(inna)
+#lista.sort()
+#lista.reverse()
+# lista.sort(reverse=True)
+# print(lista)
+#
+# lista=[1,6,5,4,2,3,1]
+# inna=sorted(lista,reverse=True)
+# print(inna)
+
+#23. Wygeneruj listę 10 elementów o losowej wartości liczbowej, posortuj listę i wyświetl jej zawartość linia po linii
