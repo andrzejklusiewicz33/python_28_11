@@ -848,6 +848,11 @@
 # sciecha=os.path.join('e:\\','katalog','podkatalog')
 # print(sciecha)
 
-# import os
-# for w in os.walk('e:\\'):
-#     print(w)
+import os
+szukane='oracle'
+for w in os.walk('e:\\'):
+    #print(w)
+    katalogi=w[1]
+    for k in katalogi:
+        if szukane.lower() in k.lower():
+            print( os.path.join(w[0],k) )
