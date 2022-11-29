@@ -1095,8 +1095,21 @@
 #
 # for x in range(85,120):
 #     print(chr(x))
-
+import time
+p=time.time()
 calosc=open('tadzio.txt',encoding='utf-8').read().lower()
+niechciane=['!','?','.',',',";",":",'/','(',')','…']
+for n in niechciane:
+    calosc=calosc.replace(n,'')
 print(calosc)
-#usuwanie niechcianych znakow
 slowa=calosc.split()
+print(slowa)
+for s in slowa:
+    print(s,slowa.count(s))
+#sl=dict()
+k=time.time()
+print(f'trwało to :{k-p}s')
+
+
+# if 'klucz' in slownik:
+#     pass
