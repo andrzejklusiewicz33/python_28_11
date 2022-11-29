@@ -702,3 +702,65 @@
 # print(inna)
 
 #23. Wygeneruj listę 10 elementów o losowej wartości liczbowej, posortuj listę i wyświetl jej zawartość linia po linii
+
+# import random
+# lista=[]
+# for x in range(10):
+#     lista.append(random.randint(1,10))
+#
+# print(lista)
+# lista.sort()
+# for e in lista:
+#     print(e)
+#
+# import random
+# lista=[random.randint(1,10) for x in range(10)]
+# lista.sort()
+# print(lista)
+# for e in lista:
+#     print(e)
+
+# lista=[
+#     [1,"B"],
+#     [3,'A'],
+#     [2,'C']
+# ]
+# print(lista)
+# lista.sort()
+# print(lista)
+#
+# import operator
+# lista=[
+#     [1,"B"],
+#     [3,'A'],
+#     [2,'C']
+# ]
+# print(lista)
+# lista.sort(key=operator.itemgetter(1))
+# print(lista)
+
+# class Osoba:
+#     def __init__(self,first_name,last_name):
+#         self.first_name=first_name
+#         self.last_name=last_name
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# o1=Osoba('Andrzej','Klusiewicz')
+# o2=Osoba('Twój','Stary')
+# o3=Osoba('Chuck','Norris')
+# lista=[o1,o2,o3]
+# lista.sort(key=lambda x:x.last_name)
+# for e in lista:
+#     print(e)
+
+# lista=[
+#     [1,"B"],
+#     [3,'A'],
+#     [2,'C']
+# ]
+# lista.sort(key=lambda e:e[1])
+# for e in lista:
+#     print(e)
+
+#24. Wczytaj do listy kolejne wiersze z pliku dane.csv. Dane posortuj po wzroscie i wyswietl linia po linii na konsoli.
