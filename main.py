@@ -843,10 +843,11 @@
 # Wyszukiwarka ma wyswietlić wszystkie pliki i katalogi zawierajace w nazwie szukaną frazę - wraz ze ścieżkami.
 # Wyszukiwarka ma być nieczuła na wielkość liter
 #
-# import os
-# for w in os.walk('e:\\'):
-#     print(w)
 #
 # import os
 # sciecha=os.path.join('e:\\','katalog','podkatalog')
 # print(sciecha)
+
+# import os
+# for w in os.walk('e:\\'):
+#     print(w)
