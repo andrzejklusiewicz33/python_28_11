@@ -764,3 +764,31 @@
 #     print(e)
 
 #24. Wczytaj do listy kolejne wiersze z pliku dane.csv. Dane posortuj po wzroscie i wyswietl linia po linii na konsoli.
+#
+# import operator
+# wynik=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# wynik.sort(key=operator.itemgetter(3))
+# for w in wynik:
+#     print(w)
+#
+# wynik=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# wynik.sort(key=lambda e:e[3])
+# for w in wynik:
+#     print(w)
+#
+# def funkcja(e):
+#     return e[3]
+
+#
+# wynik=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# wynik.sort(key=lambda e:float(e[3]))
+# for w in wynik:
+#     print(w)
+
+#przerwa do 11:39
+
+#25.  Wyświetl na konsoli linia po linii dane z pliku dane.csv ale posortowane  malejąco wg. bmi
+wynik=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+for w in wynik:
+    w.append(None)
+    print(w)
