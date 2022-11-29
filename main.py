@@ -619,3 +619,32 @@
 # W w taki sposób   by linie oczyścic z bialych znaków i rozbić na listy.
 # Każdy z elementów listy sam   powinien byc listą.
 # Następnie przeiteruj po wyniku i wyświetl wszystkie elementy listy   linia po linii.
+
+#
+# lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# for l in lista:
+#     print(float(l[3])*10)
+
+# for l in [e for e in open()]:
+# #     print(l)
+
+
+
+
+
+
+#przerwa do 10:19
+
+
+
+
+
+
+#22. Dla każdego wpisu w pliku dane.csv wyświetl na konsoli dane o
+#    id, imieniu,nazwisku, wzroscie,masie oraz obliczonym bmi zawodnika
+
+lista=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+for l in lista:
+    bmi=None
+    print(l)
+
