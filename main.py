@@ -1095,3 +1095,8 @@
 #
 # for x in range(85,120):
 #     print(chr(x))
+
+calosc=open('tadzio.txt',encoding='utf-8').read().lower()
+print(calosc)
+#usuwanie niechcianych znakow
+slowa=calosc.split()
