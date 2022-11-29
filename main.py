@@ -788,11 +788,65 @@
 #przerwa do 11:39
 
 #25.  Wyświetl na konsoli linia po linii dane z pliku dane.csv ale posortowane  malejąco wg. bmi
-wynik=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
-for w in wynik:
-    bmi=round(float(w[4])/pow(float(w[3]),2),2)
-    w.append('dupa')
-    print(w)
+# wynik=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# for w in wynik:
+#     w.append(round(float(w[4])/pow(float(w[3]),2),2))
+# wynik.sort(key=lambda e:e[5],reverse=True)
+# for w in wynik:
+#     print(w)
 
 # lista=[1,4,1,2,3]
 # lista.sort(reverse=True,key=lambda e:e)
+#
+# import operator
+# wynik=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# for w in wynik:
+#     w.append(round(float(w[4])/pow(float(w[3]),2),2))
+# wynik.sort(key=operator.itemgetter(5),reverse=True)
+# for w in wynik:
+#     print(w)
+#
+# tekst="siała baba mak"
+# szukane='BAB'
+# if szukane.lower() in tekst.lower():
+#     print('jest')
+# else:
+#     print('nie ma')
+
+# lista=['siała','baba','mak']
+# szukane='ba'
+# if szukane in lista:
+#     print('jest')
+# else:
+#     print('nie ma')
+#
+# lista=['siała','baba','mak']
+# szukane='ba'
+# for e in lista:
+#     if szukane.lower() in e.lower():
+#         print(f'jest {szukane} w {e}')
+#     else:
+#         print(f'nie ma {szukane} w {e}')
+
+#
+# tekst="siała baba mak"
+# print(tekst.count('a'))
+
+# lista=[1,1,1,1,1,2,2,2,2,3,3,3,3]
+# print(lista.count(1))
+#
+# import os
+# for w in os.walk('e:\\'):
+#     print(w)
+
+#26.Napisz wyszukiwarkę plików która przyjmie od użytkownika szukaną frazę i katalog startowy.
+# Wyszukiwarka ma wyswietlić wszystkie pliki i katalogi zawierajace w nazwie szukaną frazę - wraz ze ścieżkami.
+# Wyszukiwarka ma być nieczuła na wielkość liter
+#
+# import os
+# for w in os.walk('e:\\'):
+#     print(w)
+#
+# import os
+# sciecha=os.path.join('e:\\','katalog','podkatalog')
+# print(sciecha)
