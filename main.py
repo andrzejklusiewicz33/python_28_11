@@ -1523,3 +1523,20 @@ from dao.invoice_dao import  * #fuuuuuu
 
 #41.Stwórz pakiet zawierający moduł który bedzie zawierał funkcję przyjmującą wzrost i masę a zwracającą bmi.
 # Zaimportuj i wywołaj tę funkcję w taki sposób by przy jej wywołaniu nie trzeba było  podawać nazwy pakietu ani modułu.
+
+# for e in open('dane\\dane.csv',encoding='utf-8'):
+#     print(e.strip())
+#
+# import body.functions
+# print(body.functions.bmi(1.7,90))
+#
+# import body.functions as bf
+# print(bf.bmi(1.7,90))
+#
+# from body.functions import *
+# print(bmi(1.7,90))
+# #
+# import matplotlib.pyplot as plt
+# plt.plot()
+
+#przerwa do 14:57
