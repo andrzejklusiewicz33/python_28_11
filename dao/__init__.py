@@ -1,1 +1,1 @@
-print('inicjalizacja pakietu')
+#print('inicjalizacja pakietu')

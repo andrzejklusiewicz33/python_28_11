@@ -1540,3 +1540,46 @@ from dao.invoice_dao import  * #fuuuuuu
 # plt.plot()
 
 #przerwa do 14:57
+
+#PostgreSQL
+
+# class Osoba:
+#     imie='Andrzej'
+#     nazwisko='Klusiewicz'
+#     lista=[]
+#     def __str__(self):
+#         #return "dupa"
+#         return str(self.__dict__)
+#
+# o=Osoba()
+# print(o.__dict__)
+#
+# import requests as re
+# response=re.get('https://jsystems.pl/static/blog/python/dane.json')
+# print(response.status_code)
+# if response.status_code==200:
+#     dane=response.json()
+#     print(dane)
+
+
+
+import requests as re
+response=re.get('https://jsystems.pl/static/blog/python/dane.json')
+print(response.status_code)
+if response.status_code==200:
+    dane=response.json()
+    print(dane['nazwisko'])
+    adres=dane['adres']
+    print(adres['miasto'])
+    print(dane['adres']['miasto'])
+    jezyki=dane['jezyki']
+    for j in jezyki:
+        print(j)
+    for e in dane['jezyki']:
+        print(e)
+
+
+#42. z usługi sieciowej http://jsystems.pl/Universe/samaTabelka.do pobierz informację o szkoleniach.
+# na konsoli wyswietl tytuly, miasta i daty wszystkich szkolen które w tytule mają malymi badz duzymi
+# literami "Java" lub "JavaScript" i status terminu gwarantowanego (pole terminyGwarantowany=1)
+
