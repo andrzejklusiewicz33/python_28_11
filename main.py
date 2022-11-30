@@ -551,7 +551,7 @@
 #
 # lista=[x*100 for x in range(1,11) if x%2==0]
 # print(lista)
-# 
+#
 # lista1=[1,2,3,4,5,6,7,8,9]
 # lista2=[e*1000 for e in lista1 if e%2==0]
 # print(lista2)
@@ -1104,31 +1104,31 @@
 # Koza
 # koza
 
-import time
-p=time.time()
-calosc=open('tadzio.txt',encoding='utf-8').read().lower()
-niechciane=['!','?','.',',',";",":",'/','(',')','…','-','«']
-for n in niechciane:
-    calosc=calosc.replace(n,'')
-slowa=calosc.split()
-sl=dict()
-for s in slowa:
-    if s in sl:
-        sl[s]+=1 #zwiększ wartość dla tego słowa o 1
-    else:
-        sl[s]=1 #dodaj wpis do słowanika o kluczu takim jak to słowo
-# for s in slowa: #fuuuuuuu
-#     print(s,slowa.count(s))
-for k in sl:
-    print(k,sl[k])
-#przepakowanie do listy krotek i posortowanie malejaco po liczbie wystapien
-# lista=[
-#     ("dupa",356),
-#     ("dupa1",254),
-#     ("dupa2",110)
-# ]
-k=time.time()
-print(f'trwało to :{k-p}s')
+# import time
+# p=time.time()
+# calosc=open('tadzio.txt',encoding='utf-8').read().lower()
+# niechciane=['!','?','.',',',";",":",'/','(',')','…','-','«']
+# for n in niechciane:
+#     calosc=calosc.replace(n,'')
+# slowa=calosc.split()
+# sl=dict()
+# for s in slowa:
+#     if s in sl:
+#         sl[s]+=1 #zwiększ wartość dla tego słowa o 1
+#     else:
+#         sl[s]=1 #dodaj wpis do słowanika o kluczu takim jak to słowo
+# # for s in slowa: #fuuuuuuu
+# #     print(s,slowa.count(s))
+# for k in sl:
+#     print(k,sl[k])
+# #przepakowanie do listy krotek i posortowanie malejaco po liczbie wystapien
+# # lista=[
+# #     ("dupa",356),
+# #     ("dupa1",254),
+# #     ("dupa2",110)
+# # ]
+# k=time.time()
+# print(f'trwało to :{k-p}s')
 
 #
 # slownik[s]=1
@@ -1137,3 +1137,58 @@ print(f'trwało to :{k-p}s')
 
 # if 'klucz' in slownik:
 #     pass
+#
+#
+# import time
+# p=time.time()
+# calosc=open('tadzio.txt',encoding='utf-8').read().lower()
+# niechciane=['!','?','.',',',";",":",'/','(',')','…','-','«']
+# for n in niechciane:
+#     calosc=calosc.replace(n,'')
+# slowa=calosc.split()
+# sl=dict()
+# for s in slowa:
+#     if s not in sl:
+#         sl[s]=1 #zwiększ wartość dla tego słowa o 1
+#     else:
+#         sl[s]+=1 #dodaj wpis do słowanika o kluczu takim jak to słowo
+# # for s in slowa: #fuuuuuuu
+# #     print(s,slowa.count(s))
+# # wynik=[]
+# # for k in sl:
+# #     print(k,sl[k])
+# #     krotka=(k,sl[k])
+# #     wynik.append(krotka)
+#
+# wynik =[(k,sl[k]) for k in sl ]
+# wynik.sort(key=lambda kr:kr[1],reverse=True)
+# for w in wynik:
+#     print(w)
+# #przepakowanie do listy krotek i posortowanie malejaco po liczbie wystapien
+# # lista=[
+# #     ("dupa",356),
+# #     ("dupa1",254),
+# #     ("dupa2",110)
+# # ]
+# k=time.time()
+# print(f'trwało to :{k-p}s')
+
+
+
+#
+# calosc=open('tadzio.txt',encoding='utf-8').read().lower()
+# for n in ['!','?','.',',',";",":",'/','(',')','…','-','«']: calosc=calosc.replace(n,'')
+# sl=dict()
+# for s in calosc.split():
+#     if s not in sl:
+#         sl[s]=1
+#     else:
+#         sl[s]+=1
+# wynik =[(k,sl[k]) for k in sl ]
+# wynik.sort(key=lambda kr:kr[1],reverse=True)
+# for w in wynik: print(w)
+
+#matplotlib / seaborn
+import matplotlib.pyplot
+
+#przerwa do 10:16
