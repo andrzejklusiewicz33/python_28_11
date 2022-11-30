@@ -1214,17 +1214,33 @@
 # osx=[e for e in range(1,11)]
 # plt.bar(osx,wartosci)
 # plt.show()
+
 # import random
 # import matplotlib.pyplot as plt
 # lista=[pow(2,x) for x in range(1,11)]
 # plt.plot(lista,'r--')
-# wartosci=[random.randint(1,1000) for e in range(10)]
-# osx=[e for e in range(1,11)]
-# plt.bar(osx,wartosci)
-# plt.grid()
+# # wartosci=[random.randint(1,1000) for e in range(10)]
+# # osx=[e for e in range(1,11)]
+# # plt.bar(osx,wartosci)
+# #plt.grid()
 # plt.show()
 
 #34.Stwórz program ktory przez zmienne przyjmie kwotę, ilość lat i wysokość inflacji,
 # a następnie na wykresie przedstawi spadek wartości nabywczej podanej kwoty na przestrzeni lat.
 
 kwota=100000
+inflacja=-0.2
+ilosc_lat=5
+dane=[kwota]
+for r in range(1,ilosc_lat+1):
+    kwota=round(kwota+(kwota*inflacja))
+    dane.append(kwota)
+print(dane)
+
+# import matplotlib.pyplot as plt
+# plt.plot([pow(2,x) for x in range(1,11)])
+# plt.show()
+# import matplotlib.pyplot as plt
+# lista=[pow(2,x) for x in range(1,11)]
+# plt.plot(lista)
+# plt.show()
