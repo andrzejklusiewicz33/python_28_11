@@ -1365,14 +1365,85 @@
 #38. Stwórz funkcję która przyjmie wzrost i masę a zwróci zaokraglone do 2 miejsc po przecinku BMI.
 # W przypadku pojawienia się wyjątku, wyświetl na konsoli jaki wystąpił problem a z funkcji zwróć -1.
 
-def bmi(w,m):
-    try:
-        return round(m/pow(w,2),2)
-    except:
-        pass
-        return -1
+# def bmi(w,m):
+#     try:
+#         return round(m/pow(w,2),2)
+#     except:
+#         pass
+#         return -1
+#
+# wzrost=0#1.76
+# masa=80
+# wynik=bmi(wzrost,masa)
+# print(wynik)
+#
+# def wtf():
+#     return 1,2
+#
+# a,b=wtf()
+# print(a)
+# print(b)
 
-wzrost=0#1.76
-masa=80
-wynik=bmi(wzrost,masa)
-print(wynik)
+
+# def bmi(w,m):
+#     try:
+#         #raise IndentationError
+#         return round(m/pow(w,2),2)
+#     except ZeroDivisionError:
+#         print('podany wzrost wynosi 0')
+#         return -1
+#     except TypeError:
+#         print(f'podałeś coś innego niż liczbę type(w)={type(w)} type(m)={type(m)}')
+#         return -1
+#     except Exception as e:
+#         print(f'jakiś inny wyjątek e={e} type(e)={type(e)}')
+#
+# wzrost='dupa'#0#1.76
+# masa=80
+# wynik=bmi(wzrost,masa)
+# print(wynik)
+
+# import time
+# def mierzczas(fun):
+#     def wewnetrzna(*args,**kwargs):
+#         p=time.time()
+#         print('dekorator!')
+#         fun(*args,**kwargs)
+#         k=time.time()
+#         print(f'funkcja {fun.__name__} trwała {k-p}s')
+#     return wewnetrzna
+#
+# @mierzczas
+# def funkcja():
+#     time.sleep(2)
+#     print('funkcja!')
+#
+# funkcja()
+
+# f=mierzczas(funkcja)
+# f()
+
+#PRZERWA OBIADOWA DO 13:35
+
+#
+# def funkcja(a,b):
+#     pass
+#
+# funkcja(1,2)
+
+# def witacz(imie,nazwisko,wiek='nie podano'):
+#     print(f'witaj {imie} {nazwisko} masz {wiek} lat')
+#
+# witacz('Andrzej','Klusiewicz',36)
+# witacz('Andrzej','Klusiewicz')
+
+
+def witacz(imie,nazwisko,wiek='nie podano'):
+    print(f'witaj {imie} {nazwisko} masz {wiek} lat')
+
+witacz('Andrzej','Klusiewicz',36)
+witacz('Andrzej','Klusiewicz')
+
+#39.  Napisz funkcję która zwróci pod postacią listy krotek zawartość pliku
+  # którego nazwę przekażemy przez pierwszy argument funkcji. Plik ma być otwarty z kodowaniem
+  # podanym jako drugi argument funkcji. Jeśli kodowanie nie zostanie pdane ma przyjac utf-8
