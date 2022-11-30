@@ -1086,7 +1086,12 @@
 #       w słowniku. Jeśli nie ma to dodaj do słownika wpis o kluczu takim jak sprawdzane słowo i wartości 1
 #       dla ilości wystąpień. Jeśli takie słowo pojawia się już w kluczach słownika to trzeba zwiększyc wartośc o 1
 #    c) Przepakuj dane ze słownika do listy i posortuj.
-#
+# #
+# lista=[
+#     ("dupa",356),
+#     ("dupa1",254),
+#     ("dupa2",110)
+# ]
 # tekst='dupa !?,.....!!!! dupa'
 # niechciane=['!','?','.',',']
 # for n in niechciane:
@@ -1095,15 +1100,17 @@
 #
 # for x in range(85,120):
 #     print(chr(x))
+
+# Koza
+# koza
+
 import time
 p=time.time()
 calosc=open('tadzio.txt',encoding='utf-8').read().lower()
-niechciane=['!','?','.',',',";",":",'/','(',')','…']
+niechciane=['!','?','.',',',";",":",'/','(',')','…','-','«']
 for n in niechciane:
     calosc=calosc.replace(n,'')
-print(calosc)
 slowa=calosc.split()
-print(slowa)
 sl=dict()
 for s in slowa:
     if s in sl:
@@ -1114,6 +1121,12 @@ for s in slowa:
 #     print(s,slowa.count(s))
 for k in sl:
     print(k,sl[k])
+#przepakowanie do listy krotek i posortowanie malejaco po liczbie wystapien
+# lista=[
+#     ("dupa",356),
+#     ("dupa1",254),
+#     ("dupa2",110)
+# ]
 k=time.time()
 print(f'trwało to :{k-p}s')
 
