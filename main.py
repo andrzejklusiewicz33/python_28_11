@@ -1189,6 +1189,42 @@
 # for w in wynik: print(w)
 
 #matplotlib / seaborn
-import matplotlib.pyplot
+
 
 #przerwa do 10:16
+
+# import pakiecik.modul as pm
+# pm.dupa()
+
+# import random
+# import matplotlib.pyplot as plt
+# lista1=[random.randint(1,100) for e in range(10)]
+# lista2=[random.randint(-100,100) for e in range(10)]
+# plt.plot(lista1,'#FF0000',label="czerwona kreska")
+# plt.plot(lista2,"#00FF00",label="zielona kreska")
+# plt.xlabel("wartości osi X")
+# plt.ylabel("funkcja od X")
+# plt.grid()
+# plt.legend()
+# plt.savefig('wykres.png')
+# plt.show()
+# import random
+# import matplotlib.pyplot as plt
+# wartosci=[random.randint(1,100) for e in range(10)]
+# osx=[e for e in range(1,11)]
+# plt.bar(osx,wartosci)
+# plt.show()
+# import random
+# import matplotlib.pyplot as plt
+# lista=[pow(2,x) for x in range(1,11)]
+# plt.plot(lista,'r--')
+# wartosci=[random.randint(1,1000) for e in range(10)]
+# osx=[e for e in range(1,11)]
+# plt.bar(osx,wartosci)
+# plt.grid()
+# plt.show()
+
+#34.Stwórz program ktory przez zmienne przyjmie kwotę, ilość lat i wysokość inflacji,
+# a następnie na wykresie przedstawi spadek wartości nabywczej podanej kwoty na przestrzeni lat.
+
+kwota=100000
