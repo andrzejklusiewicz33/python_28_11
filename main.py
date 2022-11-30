@@ -1254,5 +1254,38 @@
 
 #35. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10.
 
+# for x in range(-10,11):
+#     print(x,1/x)
+
+# try:
+#     print(1/0)
+# except:
+#     print('kupa!')
+# print('coś dalej')
+
+#
+# try:
+#     print(1/0)
+# except Exception as e:
+#     print(f'error={e}')
+# print('coś dalej')
 
 
+
+# try:
+# #    raise IndexError
+#     print(1/0)
+# except IndexError:
+#     print('to się nie ma prawa zdarzyć')
+# except ZeroDivisionError:
+#     print('dzielić przez zero potrafi tylko Chuck Norris')
+# except Exception as e:
+#     print(f'error={e} type(e)={type(e)}')
+# print('coś dalej')
+
+
+#raise Exception('kij ci w oko!')
+
+#36. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10 w taki sposob by
+# w przypadku wyjatku nie przerywac dzialania petli a po prostu wyswietlic na konsoli informację
+# o błędzie i przejsc do dalszego przetwarzania
