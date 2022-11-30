@@ -1,0 +1,2 @@
+2;Monika;Bożko;1,72;61
+2;Monika;Bożko;1,72;61;ValueError

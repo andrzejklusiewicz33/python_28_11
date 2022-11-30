@@ -1562,24 +1562,45 @@ from dao.invoice_dao import  * #fuuuuuu
 #     print(dane)
 
 
-
-import requests as re
-response=re.get('https://jsystems.pl/static/blog/python/dane.json')
-print(response.status_code)
-if response.status_code==200:
-    dane=response.json()
-    print(dane['nazwisko'])
-    adres=dane['adres']
-    print(adres['miasto'])
-    print(dane['adres']['miasto'])
-    jezyki=dane['jezyki']
-    for j in jezyki:
-        print(j)
-    for e in dane['jezyki']:
-        print(e)
-
+#
+# import requests as re
+# response=re.get('https://jsystems.pl/static/blog/python/dane.json')
+# print(response.status_code)
+# if response.status_code==200:
+#     dane=response.json()
+#     print(dane['nazwisko'])
+#     adres=dane['adres']
+#     print(adres['miasto'])
+#     print(dane['adres']['miasto'])
+#     jezyki=dane['jezyki']
+#     for j in jezyki:
+#         print(j)
+#     for e in dane['jezyki']:
+#         print(e)
+#
 
 #42. z usługi sieciowej http://jsystems.pl/Universe/samaTabelka.do pobierz informację o szkoleniach.
 # na konsoli wyswietl tytuly, miasta i daty wszystkich szkolen które w tytule mają malymi badz duzymi
 # literami "Java" lub "JavaScript" i status terminu gwarantowanego (pole terminyGwarantowany=1)
+
+#BeautifulSoup
+
+
+#
+# import requests
+# response=requests.get('http://jsystems.pl/Universe/samaTabelka.do')
+# if response.status_code==200:
+#     dane=response.json()
+#     for s in dane:
+#         if 'java' in s['tytul_szkolenia'].lower() and s['terminyGwarantowany']==1:
+#             print(s['tytul_szkolenia'],s['termin'],s['miasto'])
+#
+
+
+
+import requests
+response=requests.get('http://jsystems.pl/Universe/samaTabelka.do')
+if response.status_code==200:
+    for e in [s for s in response.json() if 'java' in s['tytul_szkolenia'].lower() and s['terminyGwarantowany']==1]:
+        print(e['tytul_szkolenia'], e['termin'], e['miasto'])
 
