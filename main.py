@@ -1318,4 +1318,49 @@
 # print(lista)
 # nowa_linia=";".join(lista)+"\n"
 # print(nowa_linia)
+#
+# lista=[linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]
+# for e in lista:
+#     try:
+#         bmi=round(float(e[4])/pow(float(e[3]),2),2)
+#         print(e,bmi)
+#     except ValueError:
+#         plik=open('errors.csv',encoding='utf-8',mode='a')
+#         linia=';'.join(e)+";ValueError\n"
+#         plik.write(linia)
 
+#
+# for e in [linia.strip().split(';') for linia in open('dane.csv',encoding='utf-8')]:
+#     try:
+#         print(e,round(float(e[4])/pow(float(e[3]),2),2))
+#     except ValueError:
+#         open('errors.csv',encoding='utf-8',mode='a').write(';'.join(e)+";ValueError\n")
+
+#tkinter
+
+# def hello():
+#     print('Hiszpańska Inkwizycja')
+#
+# hello()
+
+# def hello(imie):
+#     print(f'Hello {imie}')
+#
+# hello('Andrzej')
+#
+# def hello(imie,nazwisko):
+#     print(f'Hello {imie} {nazwisko}')
+#
+# hello('Andrzej','Klusiewicz')
+#
+# def mnozenie(x,y):
+#     # wynik=x*y
+#     # return wynik
+#     return x*y
+#
+# wynik=mnozenie(6,9)
+# print(wynik)
+# print(mnozenie(5,6))
+
+#38. Stwórz funkcję która przyjmie wzrost i masę a zwróci zaokraglone do 2 miejsc po przecinku BMI.
+# W przypadku pojawienia się wyjątku, wyświetl na konsoli jaki wystąpił problem a z funkcji zwróć -1.
