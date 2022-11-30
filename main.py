@@ -1364,3 +1364,15 @@
 
 #38. Stwórz funkcję która przyjmie wzrost i masę a zwróci zaokraglone do 2 miejsc po przecinku BMI.
 # W przypadku pojawienia się wyjątku, wyświetl na konsoli jaki wystąpił problem a z funkcji zwróć -1.
+
+def bmi(w,m):
+    try:
+        return round(m/pow(w,2),2)
+    except:
+        pass
+        return -1
+
+wzrost=0#1.76
+masa=80
+wynik=bmi(wzrost,masa)
+print(wynik)
