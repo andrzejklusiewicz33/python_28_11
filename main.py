@@ -1289,3 +1289,33 @@
 #36. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10 w taki sposob by
 # w przypadku wyjatku nie przerywac dzialania petli a po prostu wyswietlic na konsoli informację
 # o błędzie i przejsc do dalszego przetwarzania
+
+# for x in range(-10,11):
+#     try:
+#         print(x,1/x)
+#     except ZeroDivisionError:
+#         print(f'dzielenie przez zero na x={x}')
+
+# try: #fuuuuuuu
+#     for x in range(-10,11):
+#         print(1/x)
+# except ZeroDivisionError:
+#     print('muka')
+
+#przerwa do 11:46
+
+#37. Przetwórz wszystkie wiersze z dane.csv wyswietlajac na konsoli dane z wiersza wzbogacone o bmi.
+# Nie podmieniaj przecinków etc w tekscie. W przypadku pojawienia się wyjątku na obliczaniu bmi dla
+# któregoś wiersza chcemy go zapisać (cały wiersz) w osobnym pliku bledy.csv wzbogacony o informację o rodzaju błędu
+#4;Andrzej;1,89;90;IOERROR
+#
+# plik=open('output.txt',encoding='utf-8',mode='a')
+# for x in range(1,11):
+#     plik.write(f'element numer {x}\n')
+
+# linia='1;Andrzej;Klusiewicz;1.76;80'
+# lista=linia.split(';')
+# print(lista)
+# nowa_linia=";".join(lista)+"\n"
+# print(nowa_linia)
+
