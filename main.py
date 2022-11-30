@@ -1475,6 +1475,51 @@
  # liście i wyświetlić każdy element na konsoli. Odbierz dane z funkcji z ćwiczenia
  # poprzedniego i przekaz do nowo powstalej funkcji.
 
+#
+# def list_me(file_name,enc='utf-8',divider=';'):
+#     return [tuple(e.strip().split(divider)) for e in open(file_name, encoding=enc)]
+#
+# def print_me(result):
+#     for r in result:
+#         print(r)
+#
+# wynik=list_me('dane.csv')
+# print_me(wynik)
+#
+# print_me( list_me('dane.csv') )
+#
+# import moj_modul
+# moj_modul.siemator()
 
-def list_me(file_name,enc='utf-8',divider=';'):
-    return [tuple(e.strip().split(divider)) for e in open(file_name, encoding=enc)]
+
+# import moj_modul as mm
+# mm.siemator()
+#
+# from moj_modul import siemator
+# siemator()
+#
+# from invoice_dao import * #fuuuuu
+# from participants_dao import * #fuuuuu
+# print(get_all())
+
+# import invoice_dao as idao
+# import participants_dao as pdao
+# print(idao.get_all())
+# print(pdao.get_all())
+
+#import invoice_dao
+
+#import this
+
+# import dao.invoice_dao
+# print(dao.invoice_dao.get_all())
+
+#
+# import dao.invoice_dao as idao
+# print(idao.get_all())
+
+from dao.invoice_dao import  * #fuuuuuu
+#print(get_all())
+
+#41.Stwórz pakiet zawierający moduł który bedzie zawierał funkcję przyjmującą wzrost i masę a zwracającą bmi.
+# Zaimportuj i wywołaj tę funkcję w taki sposób by przy jej wywołaniu nie trzeba było  podawać nazwy pakietu ani modułu.

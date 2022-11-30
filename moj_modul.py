@@ -1,0 +1,3 @@
+def siemator():
+    print('siema!')
+
