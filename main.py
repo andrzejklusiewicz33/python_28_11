@@ -1438,12 +1438,43 @@
 # witacz('Andrzej','Klusiewicz')
 
 
-def witacz(imie,nazwisko,wiek='nie podano'):
-    print(f'witaj {imie} {nazwisko} masz {wiek} lat')
+# def witacz(imie,nazwisko,wiek='nie podano'):
+#     print(f'witaj {imie} {nazwisko} masz {wiek} lat')
+#
+# witacz('Andrzej','Klusiewicz',36)
+# witacz('Andrzej','Klusiewicz')
 
-witacz('Andrzej','Klusiewicz',36)
-witacz('Andrzej','Klusiewicz')
-
-#39.  Napisz funkcję która zwróci pod postacią listy krotek zawartość pliku
+#39.  Napisz funkcję która zwróci pod postacią listy krotek zawartość pliku CSV
   # którego nazwę przekażemy przez pierwszy argument funkcji. Plik ma być otwarty z kodowaniem
   # podanym jako drugi argument funkcji. Jeśli kodowanie nie zostanie pdane ma przyjac utf-8
+  #Rozszerzenie - rodzielacz kolumn niech też będzie konfigurowalny przy wywołaniu funkcji
+
+# def list_me(file_name,enc='utf-8',divider=';'):
+#     return [tuple(e.strip().split(divider)) for e in open(file_name, encoding=enc)]
+#
+# #wynik=list_me('dane.csv','utf-8',';')
+# #wynik=list_me('dane.csv',divider=' ')
+# for w in wynik:
+#     print(w)
+#
+# for w in list_me('dane.csv'):
+#     print(w)
+#
+# def list_me(file_name,enc='utf-8',divider=';'):
+#     return [tuple(e.strip().split(divider)) for e in open(file_name, encoding=enc)]
+
+
+#
+# en=input('podaj_kodowanie:\n')
+# if len(en.strip())==0:
+#     en='jakas wartosc'
+
+#
+#40. Napisz funkcję która bedzie w stanie przyjąć taką listę jaka jest zwracana
+ # przez funkcję z poprzedniego ćwiczenia. Funkcja ta ma przeiterować po otrzymanej
+ # liście i wyświetlić każdy element na konsoli. Odbierz dane z funkcji z ćwiczenia
+ # poprzedniego i przekaz do nowo powstalej funkcji.
+
+
+def list_me(file_name,enc='utf-8',divider=';'):
+    return [tuple(e.strip().split(divider)) for e in open(file_name, encoding=enc)]
