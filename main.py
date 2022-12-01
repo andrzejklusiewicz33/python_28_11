@@ -1677,13 +1677,30 @@ from dao.invoice_dao import  * #fuuuuuu
 # export('export.csv')
 
 #przerwa do 12:07
+#
+# import psycopg2
+# with psycopg2.connect(host="localhost",database="andrzej",user="andrzej", password="oracle", port=5432) as connection:
+#     cursor=connection.cursor()
+#     krotka=('Przyczłap do bulbulatora',60,'takie coś',2)
+#     sql="insert into produkty (nazwa,cena,opis,stan) values ('Przyczłap do bulbulatora',60,'takie coś',2)"
+#     cursor.execute(sql)
+#     connection.commit()
+#     #connection.rollback()
+#
+# import psycopg2
+# with psycopg2.connect(host="localhost",database="andrzej",user="andrzej", password="oracle", port=5432) as connection:
+#     cursor=connection.cursor()
+#     krotka=('Przyczłap do bulbulatora 2',60,'takie coś',2)
+#     sql="insert into produkty (nazwa,cena,opis,stan) values "+str(krotka)
+#     cursor.execute(sql)
+#     connection.commit()
+#     #connection.rollback()
 
-import psycopg2
-with psycopg2.connect(host="localhost",database="andrzej",user="andrzej", password="oracle", port=5432) as connection:
-    cursor=connection.cursor()
-    sql="insert into produkty (nazwa,cena,opis,stan) values ('Przyczłap do bulbulatora',60,'takie coś',2);"
-    cursor.execute(sql)
-    connection.commit()
-    #connection.rollback()
+
+
+# select * from zawodnicy;
+# delete from zawodnicy where id_zawodnika=4;
+# delete from zawodnicy;
+# update zawodnicy set imie='cos nowego',nazwisko='zmienione' where id_zawodnika=4;
 
 #44.Załaduj do tabelki zawodnicy wszystkie dane z pliku dane.csv
