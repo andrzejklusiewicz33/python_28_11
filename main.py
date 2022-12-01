@@ -2027,11 +2027,29 @@ from dao.invoice_dao import  * #fuuuuuu
 # pliku konfiguracyjnego w taki sposób, by pierwsza kolumna stanowiła klucze dla słownika a druga wartości.
 #Przetestuj tworzenie obiektu i wyświetlanie jego zawartości
 
-class Config:
-    sl=dict()
-    def __init__(self):
-        lista=[e.strip().split('=') for e in open('ustawienia.conf',encoding='utf-8')]
-        for l in lista:
-            print(l)
+# class Config:
+#     sl=dict()
+#     def __init__(self):
+#         data=[e.strip().split('=') for e in open('ustawienia.conf',encoding='utf-8')]
+#         for l in data:
+#             key=l[0]
+#             value=l[1]
+#             self.sl[key]=value
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# class Config:
+#     sl=dict()
+#     def __init__(self):
+#         data=[e.strip().split('=') for e in open('ustawienia.conf',encoding='utf-8')]
+#         for l in data:
+#             self.sl[l[0]]=l[1]
+#     def __str__(self):
+#         #return str(self.__dict__)
+#         return f'sl={self.sl}'
+#
+#
+# c=Config()
+# print(c.sl)
+# print(c)
 
-c=Config()
