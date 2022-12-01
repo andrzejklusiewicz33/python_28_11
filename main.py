@@ -2004,13 +2004,25 @@ from dao.invoice_dao import  * #fuuuuuu
 
 #49. Do klasy Samochod dodaj metodę __str__, stwórz obiekt tej klasy i wyswietl jego zawartosc na konsoli.
 #Usun metodę wyświetl
-class Samochod:
-    marka=None
-    model=None
-    rejestracja=None
-    def wyswietl(self):
-        print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
-    def __init__(self,marka,model,rejestracja):
-        self.marka=marka
-        self.model=model
-        self.rejestracja=rejestracja
+# class Samochod:
+#     marka=None
+#     model=None
+#     rejestracja=None
+#     def __str__(self):
+#         return str(self.__dict__)
+#     def __init__(self,marka,model,rejestracja):
+#         self.marka=marka
+#         self.model=model
+#         self.rejestracja=rejestracja
+#
+# s=Samochod('Mercedes','e200','ABC 1234')
+# print(s)
+
+#50. Stwórz plik konfiguracyjny z zawartością:
+# encoding=utf-8
+# timezone=-2
+# color=black
+# Stwórz klasę Ustawienia która będzie posiadała słownik.
+# Niech każdy obiekt klasy ustawienia podczas jego tworzenia wczytuje do tego słownika zawartość
+# pliku konfiguracyjnego w taki sposób, by pierwsza kolumna stanowiła klucze dla słownika a druga wartości.
+#Przetestuj tworzenie obiektu i wyświetlanie jego zawartości
