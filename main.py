@@ -1608,3 +1608,9 @@ from dao.invoice_dao import  * #fuuuuuu
 #dbeaver
 
 #przerwa do 10:35
+
+#13.74.139.54
+#szkolenie_jsystems_2021
+
+import psycopg2 #PSYCOPG2
+connection=psycopg2.connect(host="localhost",database="andrzej",user="andrzej", password="oracle", port=5432)
