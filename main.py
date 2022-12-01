@@ -1649,5 +1649,31 @@ from dao.invoice_dao import  * #fuuuuuu
 
 #43.Napisz funkcję która przyjmie przez parametr nazwę pliku do którego zapisze
 #   wszystkie wiersze z tabelki pracownicy w fomacie csv
+#
+# #s=f'{w[0]};{e[1]}'
+# import psycopg2  # PSYCOPG2
+# def export(filename):
+#     with psycopg2.connect(host="localhost",database="andrzej",user="andrzej", password="oracle", port=5432) as connection:
+#         cursor=connection.cursor()
+#         cursor.execute('select * from pracownicy')
+#         file=open(filename,encoding="utf-8",mode="w")
+#         for w in cursor:
+#             line=f'{w[0]};{w[1]};{w[2]};{w[3]}\n'
+#             print(line)
+#             file.write(line)
+#
+# export('export.csv')
+import psycopg2
+def export(filename):
+    with psycopg2.connect(host="localhost",database="andrzej",user="andrzej", password="oracle", port=5432) as connection:
+        cursor=connection.cursor()
+        cursor.execute('select * from pracownicy')
+        with open(filename,encoding="utf-8",mode="w") as file:
+            for w in cursor:
+                line=f'{w[0]};{w[1]};{w[2]};{w[3]}\n'
+                print(line)
+                file.write(line)
 
-#s=f'{w[0]};{e[1]}'
+export('export.csv')
+
+#przerwa do 12:07
