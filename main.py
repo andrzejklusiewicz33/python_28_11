@@ -1611,6 +1611,43 @@ from dao.invoice_dao import  * #fuuuuuu
 
 #13.74.139.54
 #szkolenie_jsystems_2021
+#
+# import psycopg2 #PSYCOPG2
+# connection=psycopg2.connect(host="localhost",database="andrzej",user="andrzej", password="oracle", port=5432)
+# cursor=connection.cursor()
+# sql='select * from produkty'
+# cursor.execute(sql)
+# #cursor.execute('select * from produkty')
+# for w in cursor:
+#     print(w)
+# connection.close()
 
-import psycopg2 #PSYCOPG2
-connection=psycopg2.connect(host="localhost",database="andrzej",user="andrzej", password="oracle", port=5432)
+
+
+# import psycopg2 #PSYCOPG2
+# with psycopg2.connect(host="localhost",database="andrzej",user="andrzej", password="oracle", port=5432) as connection:
+#     cursor=connection.cursor()
+#     sql='select * from produkty'
+#     cursor.execute(sql)
+#     for w in cursor:
+#         print(w)
+
+#
+# with open('dane.csv') as plik:
+#     pass
+#
+# import psycopg2 #PSYCOPG2
+# with psycopg2.connect(host="localhost",database="andrzej",user="andrzej", password="oracle", port=5432) as connection:
+#     cursor=connection.cursor()
+#     id=2
+#     sql=f'select * from produkty where id_produktu={id}'
+#     cursor.execute(sql)
+#     w=cursor.fetchone()
+#     print(w)
+#
+
+
+#43.Napisz funkcję która przyjmie przez parametr nazwę pliku do którego zapisze
+#   wszystkie wiersze z tabelki pracownicy w fomacie csv
+
+#s=f'{w[0]};{e[1]}'
