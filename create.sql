@@ -26,3 +26,12 @@ insert into pracownicy(imie,nazwisko,komentarz) values('Zenek','Martyniuk','...'
 insert into pracownicy(imie,nazwisko,komentarz) values('Ferdynand','Kiepski','...');
 
 select * from pracownicy;
+
+
+create table zawodnicy(
+	id_zawodnika integer primary key,
+	imie text not null,
+	nazwisko text not null,
+	wzrost numeric not null,
+	masa numeric not null
+);

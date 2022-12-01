@@ -1663,17 +1663,27 @@ from dao.invoice_dao import  * #fuuuuuu
 #             file.write(line)
 #
 # export('export.csv')
-import psycopg2
-def export(filename):
-    with psycopg2.connect(host="localhost",database="andrzej",user="andrzej", password="oracle", port=5432) as connection:
-        cursor=connection.cursor()
-        cursor.execute('select * from pracownicy')
-        with open(filename,encoding="utf-8",mode="w") as file:
-            for w in cursor:
-                line=f'{w[0]};{w[1]};{w[2]};{w[3]}\n'
-                print(line)
-                file.write(line)
-
-export('export.csv')
+# import psycopg2
+# def export(filename):
+#     with psycopg2.connect(host="localhost",database="andrzej",user="andrzej", password="oracle", port=5432) as connection:
+#         cursor=connection.cursor()
+#         cursor.execute('select * from pracownicy')
+#         with open(filename,encoding="utf-8",mode="w") as file:
+#             for w in cursor:
+#                 line=f'{w[0]};{w[1]};{w[2]};{w[3]}\n'
+#                 print(line)
+#                 file.write(line)
+#
+# export('export.csv')
 
 #przerwa do 12:07
+
+import psycopg2
+with psycopg2.connect(host="localhost",database="andrzej",user="andrzej", password="oracle", port=5432) as connection:
+    cursor=connection.cursor()
+    sql="insert into produkty (nazwa,cena,opis,stan) values ('Przyczłap do bulbulatora',60,'takie coś',2);"
+    cursor.execute(sql)
+    connection.commit()
+    #connection.rollback()
+
+#44.Załaduj do tabelki zawodnicy wszystkie dane z pliku dane.csv
