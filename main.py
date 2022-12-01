@@ -2053,3 +2053,4 @@ from dao.invoice_dao import  * #fuuuuuu
 # print(c.sl)
 # print(c)
 
+
