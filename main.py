@@ -2026,3 +2026,12 @@ from dao.invoice_dao import  * #fuuuuuu
 # Niech każdy obiekt klasy ustawienia podczas jego tworzenia wczytuje do tego słownika zawartość
 # pliku konfiguracyjnego w taki sposób, by pierwsza kolumna stanowiła klucze dla słownika a druga wartości.
 #Przetestuj tworzenie obiektu i wyświetlanie jego zawartości
+
+class Config:
+    sl=dict()
+    def __init__(self):
+        lista=[e.strip().split('=') for e in open('ustawienia.conf',encoding='utf-8')]
+        for l in lista:
+            print(l)
+
+c=Config()
