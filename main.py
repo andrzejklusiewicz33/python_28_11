@@ -1755,5 +1755,59 @@ from dao.invoice_dao import  * #fuuuuuu
 #
 # class UczestnikSzkolenia:
 #     pass
-
+#
+# class Samochod:
+#     marka=None
+#     model=None
+#     rejestracja=None
+#     def wyswietl(self):
+#         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+#
+# s1=Samochod()
+# s1.marka='Renault'
+# s1.model='Kadjar'
+# s1.rejestracja='WY 12345'
+#
+# s2=Samochod()
+# s2.marka="Czarny"
+# s2.model="Ciągnij"
+# s2.rejestracja="POJ 2400"
+#
+# s1.wyswietl()
+# s2.wyswietl()
 #PEP8
+#
+# class Zawodnik:
+#     pass
+#
+# lista=[]
+# for x in range(10):
+#     z=Zawodnik()
+#     lista.append(z)
+# print(lista)
+
+#s.wyswietl()
+
+
+# class Osoba:
+#     imie=None
+#     nazwisko=None
+#     def ustaw_wartosci(self,imie,nazwisko):
+#         self.imie=imie
+#         self.nazwisko=nazwisko
+#     def przedstaw_sie(self):
+#         print(f'Siema! Jestem {self.imie} {self.nazwisko}!')
+#
+# o=Osoba()
+# o.ustaw_wartosci("Andrzej","Klusiewicz")
+# o.przedstaw_sie()
+
+#46.Zadbaj o to by klasa Samochod posiadała metodę pozwalającą ustawić wartości wszystkich pól.
+# Jej przykładowe wywołanie: s1.ustaw_wartosci(‘Renault’,’Kadjar’,’WE968RP’)
+
+class Samochod:
+    marka=None
+    model=None
+    rejestracja=None
+    def wyswietl(self):
+        print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
