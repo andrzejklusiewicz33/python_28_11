@@ -1597,10 +1597,14 @@ from dao.invoice_dao import  * #fuuuuuu
 #
 
 
+#
+# import requests
+# response=requests.get('http://jsystems.pl/Universe/samaTabelka.do')
+# if response.status_code==200:
+#     for e in [s for s in response.json() if 'java' in s['tytul_szkolenia'].lower() and s['terminyGwarantowany']==1]:
+#         print(e['tytul_szkolenia'], e['termin'], e['miasto'])
 
-import requests
-response=requests.get('http://jsystems.pl/Universe/samaTabelka.do')
-if response.status_code==200:
-    for e in [s for s in response.json() if 'java' in s['tytul_szkolenia'].lower() and s['terminyGwarantowany']==1]:
-        print(e['tytul_szkolenia'], e['termin'], e['miasto'])
 
+#dbeaver
+
+#przerwa do 10:35
