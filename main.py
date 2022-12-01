@@ -1945,14 +1945,72 @@ from dao.invoice_dao import  * #fuuuuuu
 #48. Stwórz klasę Zawodnik posiadającą pola wzrost i masa. Pola te mają być uzupełniane przy tworzeniu obiektu - obligatoryjnie.
 # Dodaj do klasy metodę get_bmi która zwróci obliczone na podstawie pól BMI.
 # Powołaj do życia obiekt tej klasy i wyświetl na konsoli obliczone BMI.
+#
+# class Zawodnik:
+#     wzrost=None
+#     masa=None
+#     def __init__(self,wzrost,masa):
+#         self.wzrost=wzrost
+#         self.masa=masa
+#     def get_bmi(self):
+#         return round(self.masa/pow(self.wzrost,2),2)
+#
+# z=Zawodnik(1.76,71)
+# print(z.get_bmi())
 
-class Zawodnik:
-    wzrost=None
-    masa=None
-    def __init__(self,wzrost,masa):
-        pass
-    def get_bmi(self):
-        pass
 
-z=Zawodnik(1.76,71)
-print(z.get_bmi())
+# class Zawodnik:
+#     def __init__(self,wzrost,masa):
+#         self.wzrost=wzrost
+#         self.masa=masa
+#     def get_bmi(self):
+#         return round(self.masa/pow(self.wzrost,2),2)
+#
+# z=Zawodnik(1.76,71)
+# print(z.get_bmi())
+# z.zarobki=100000
+# print(z.zarobki)
+#
+# z2=Zawodnik(2,80)
+# print(z2.zarobki)
+#
+# class Product:
+#     def __init__(self,nazwa,cena_netto):
+#         self.nazwa=nazwa
+#         self.cena_netto=cena_netto
+#         self.cena_brutto=self.cena_netto*1.23
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# p=Product('Bulbulator',100)
+# print(p)
+
+
+
+# class Osoba:
+#     imie=None
+#     nazwisko=None
+#     def __init__(self,imie,nazwisko):
+#         self.imie=imie
+#         self.nazwisko=nazwisko
+#     def __str__(self):
+#         #return f'imie={self.imie}, nazwisko={self.nazwisko}'
+#         return str(self.__dict__)
+#
+# o=Osoba('Świnka','Peppa')
+# print(o)
+#print(o.__dict__)
+
+
+#49. Do klasy Samochod dodaj metodę __str__, stwórz obiekt tej klasy i wyswietl jego zawartosc na konsoli.
+#Usun metodę wyświetl
+class Samochod:
+    marka=None
+    model=None
+    rejestracja=None
+    def wyswietl(self):
+        print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+    def __init__(self,marka,model,rejestracja):
+        self.marka=marka
+        self.model=model
+        self.rejestracja=rejestracja
