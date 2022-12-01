@@ -1945,3 +1945,14 @@ from dao.invoice_dao import  * #fuuuuuu
 #48. Stwórz klasę Zawodnik posiadającą pola wzrost i masa. Pola te mają być uzupełniane przy tworzeniu obiektu - obligatoryjnie.
 # Dodaj do klasy metodę get_bmi która zwróci obliczone na podstawie pól BMI.
 # Powołaj do życia obiekt tej klasy i wyświetl na konsoli obliczone BMI.
+
+class Zawodnik:
+    wzrost=None
+    masa=None
+    def __init__(self,wzrost,masa):
+        pass
+    def get_bmi(self):
+        pass
+
+z=Zawodnik(1.76,71)
+print(z.get_bmi())
