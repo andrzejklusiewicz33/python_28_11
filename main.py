@@ -1704,3 +1704,15 @@ from dao.invoice_dao import  * #fuuuuuu
 # update zawodnicy set imie='cos nowego',nazwisko='zmienione' where id_zawodnika=4;
 
 #44.Załaduj do tabelki zawodnicy wszystkie dane z pliku dane.csv
+
+# import psycopg2
+# with psycopg2.connect(host="localhost",database="andrzej",user="andrzej", password="oracle", port=5432) as connection:
+#     cursor=connection.cursor()
+#     dane=[e.strip().split(';') for e in open('dane\\dane.csv',encoding='utf-8')]
+#     for d in dane:
+#         sql=f"insert into zawodnicy values ({d[0]},'{d[1]}','{d[2]}',{d[3]},{d[4]})"
+#         print(sql)
+#         cursor.execute(sql)
+#     connection.commit()
+
+#PRZERWA OBIADOWA DO 13:26
