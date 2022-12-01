@@ -1805,9 +1805,133 @@ from dao.invoice_dao import  * #fuuuuuu
 #46.Zadbaj o to by klasa Samochod posiadała metodę pozwalającą ustawić wartości wszystkich pól.
 # Jej przykładowe wywołanie: s1.ustaw_wartosci(‘Renault’,’Kadjar’,’WE968RP’)
 
+# class Samochod:
+#     '''Funkcja wyswietl wyswietla zawartosc obiektu, a funkcja ustaw ustawia pola w obiekcie'''
+#     marka=None
+#     model=None
+#     rejestracja=None
+#     def wyswietl(self):
+#         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+#
+#     def ustaw(self,marka,model,rejestracja):
+#         self.marka=marka
+#         self.model=model
+#         self.rejestracja=rejestracja
+#
+# s=Samochod()
+# s.wyswietl()
+#s=Samochod('BMW','M1','WWL 12345')
+#print(s)
+#help(Samochod)
+
+# def funkcja():
+#     '''nic nie robię'''
+#     pass
+#
+# help(funkcja)
+
+# s=Samochod()
+# s.ustaw("Renault",'Kadjar','WY 722CP')
+# s.wyswietl()
+
+
+# class Osoba:
+#     imie=None
+#     nazwisko=None
+#
+#     def __init__(self):
+#         print('konstruktor!!!!!')
+#     def ustaw_wartosci(self,imie,nazwisko):
+#         self.imie=imie
+#         self.nazwisko=nazwisko
+#     def przedstaw_sie(self):
+#         print(f'Siema! Jestem {self.imie} {self.nazwisko}!')
+#
+# o=Osoba()
+#o.ustaw_wartosci("Andrzej","Klusiewicz")
+#
+# class Osoba:
+#     imie=None
+#     nazwisko=None
+#
+#     def __init__(self,imie,nazwisko):
+#         print('konstruktor!!!!!')
+#         self.imie=imie
+#         self.nazwisko=nazwisko
+#     def ustaw_wartosci(self,imie,nazwisko):
+#         self.imie=imie
+#         self.nazwisko=nazwisko
+#     def przedstaw_sie(self):
+#         print(f'Siema! Jestem {self.imie} {self.nazwisko}!')
+#
+# o=Osoba('A','B')
+# o.przedstaw_sie()
+
+
+# class Osoba:
+#     imie=None
+#     nazwisko=None
+#
+#     def __init__(self,imie,nazwisko):
+#         print('konstruktor!!!!!')
+#         self.imie=imie
+#         self.nazwisko=nazwisko
+#     def ustaw_wartosci(self,imie,nazwisko):
+#         self.imie=imie
+#         self.nazwisko=nazwisko
+#     def przedstaw_sie(self):
+#         print(f'Siema! Jestem {self.imie} {self.nazwisko}!')
+#
+# o=Osoba(None,None)
+# o.przedstaw_sie()
+
+
+# class Osoba:
+#     imie=None
+#     nazwisko=None
+#
+#     def __init__(self,imie='nie podano',nazwisko='nie podano'):
+#         print('konstruktor!!!!!')
+#         self.imie=imie
+#         self.nazwisko=nazwisko
+#     def ustaw_wartosci(self,imie,nazwisko):
+#         self.imie=imie
+#         self.nazwisko=nazwisko
+#     def przedstaw_sie(self):
+#         print(f'Siema! Jestem {self.imie} {self.nazwisko}!')
+#
+# o=Osoba()
+# o.przedstaw_sie()
+
+# o=Osoba("Andrzej")
+# o.przedstaw_sie()
+#
+# o=Osoba(nazwisko="Klusiewicz")
+# o.przedstaw_sie()
+
+
+# class Osoba:
+#     imie=None
+#     nazwisko=None
+#     def __init__(self,imie,nazwisko):
+#         self.imie=imie
+#         self.nazwisko=nazwisko
+#     def przedstaw_sie(self):
+#         print(f'Siema! Jestem {self.imie} {self.nazwisko}!')
+#
+# o=Osoba('A','B')
+# o.przedstaw_sie()
+
+#47. Dodaj do klasy Samochód konstruktor wymuszający ustawienie wartości wszystkich pól przy tworzeniu obiektu.
+# Stworz obiekt klasy samochod i wywolaj na nim metode wyswietl
+
 class Samochod:
     marka=None
     model=None
     rejestracja=None
     def wyswietl(self):
         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+    def ustaw(self,marka,model,rejestracja):
+        self.marka=marka
+        self.model=model
+        self.rejestracja=rejestracja
