@@ -1716,3 +1716,44 @@ from dao.invoice_dao import  * #fuuuuuu
 #     connection.commit()
 
 #PRZERWA OBIADOWA DO 13:26
+
+# class Osoba:
+#     imie=None
+#     nazwisko=None
+#
+# o1=Osoba()
+# o1.imie='Andrzej'
+# o1.nazwisko='Klusiewicz'
+# print(o1.imie,o1.nazwisko)
+#
+# o2=Osoba()
+# o2.imie='Stefan'
+# o2.nazwisko='Żeromski'
+# print(o2.imie,o2.nazwisko)
+
+#
+# class Osoba:
+#     imie=None
+#     nazwisko=None
+#     def przedstaw_sie(self):
+#         print(f'Siema! Jestem {self.imie} {self.nazwisko}!')
+#
+#
+# o1=Osoba()
+# o1.imie='Andrzej'
+# o1.nazwisko='Klusiewicz'
+# o1.przedstaw_sie()
+#
+# o2=Osoba()
+# o2.imie='Stefan'
+# o2.nazwisko='Żeromski'
+# o2.przedstaw_sie()
+
+#45. Stwórz klasę "Samochod" posiadającą pola "marka", "model", "rejestracja".
+#    Klasa ta powinna zawierać też metodę "wyswietl" wypisującą dane z obiektu na konsoli Stwórz dwa obiekty tej klasy,
+#    uzupełnij danymi i korzystajac  z metody "wyświetl" wyswietl na konsoli ich zawartość.
+#
+# class UczestnikSzkolenia:
+#     pass
+
+#PEP8
