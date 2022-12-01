@@ -1924,14 +1924,24 @@ from dao.invoice_dao import  * #fuuuuuu
 
 #47. Dodaj do klasy Samochód konstruktor wymuszający ustawienie wartości wszystkich pól przy tworzeniu obiektu.
 # Stworz obiekt klasy samochod i wywolaj na nim metode wyswietl
+#
+# class Samochod:
+#     marka=None
+#     model=None
+#     rejestracja=None
+#     def wyswietl(self):
+#         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+#     def __init__(self,marka,model,rejestracja):
+#         self.marka=marka
+#         self.model=model
+#         self.rejestracja=rejestracja
+#
+# #s=Samochod()
+# s=Samochod('A','B','C')
+# s.wyswietl()
 
-class Samochod:
-    marka=None
-    model=None
-    rejestracja=None
-    def wyswietl(self):
-        print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
-    def ustaw(self,marka,model,rejestracja):
-        self.marka=marka
-        self.model=model
-        self.rejestracja=rejestracja
+#PRZERWA DO 14:41
+
+#48. Stwórz klasę Zawodnik posiadającą pola wzrost i masa. Pola te mają być uzupełniane przy tworzeniu obiektu - obligatoryjnie.
+# Dodaj do klasy metodę get_bmi która zwróci obliczone na podstawie pól BMI.
+# Powołaj do życia obiekt tej klasy i wyświetl na konsoli obliczone BMI.
