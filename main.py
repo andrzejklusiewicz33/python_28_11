@@ -2054,3 +2054,45 @@ from dao.invoice_dao import  * #fuuuuuu
 # print(c)
 
 
+#pracownik.imie
+#pracownik.nazwisko
+
+
+# @app.route('/request_me')
+# def request_me(request):
+#     pDao=ProductDao()
+#     product_list=pDao.get_all()
+#     return render_template("request_me.html",data=product_list)
+#
+# {%for d in data%}
+# <tr><td>{{d.product_name}}</td></tr>
+# {%endfor%}
+
+#51. Załaduj dane z pliku dane.csv do postaci listy obiektów.
+# Następnie przeiteruj po tej liście i wyświetl zawartość każdego z obiektów
+
+#Klasa Player
+#Konstruktor sparametryzowany - na wszystkie pola
+#__str__
+
+#p=Player(e[0],e[1])
+
+# class Osoba:
+#     imie=None
+#     nazwisko=None
+#     def __init__(self,imie,nazwisko):
+#         self.imie=imie
+#         self.nazwisko=nazwisko
+#     def __str__(self):
+#         #return f'imie={self.imie}, nazwisko={self.nazwisko}'
+#         return str(self.__dict__)
+#
+# lista_obiektow=[]
+# for x in range(1,11):
+#         # o=Osoba(f'imię numer {x}',f'nazwisko numer {x}')
+#         # lista_obiektow.append(o)
+#         lista_obiektow.append( Osoba(f'imię numer {x}',f'nazwisko numer {x}') )
+#
+# for lo in lista_obiektow:
+#     print(lo)
+
