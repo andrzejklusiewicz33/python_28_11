@@ -1518,7 +1518,7 @@
 # import dao.invoice_dao as idao
 # print(idao.get_all())
 
-from dao.invoice_dao import  * #fuuuuuu
+#from player_dao.invoice_dao import  * #fuuuuuu
 #print(get_all())
 
 #41.Stwórz pakiet zawierający moduł który bedzie zawierał funkcję przyjmującą wzrost i masę a zwracającą bmi.
@@ -2054,6 +2054,7 @@ from dao.invoice_dao import  * #fuuuuuu
 # print(c)
 
 
+
 #pracownik.imie
 #pracownik.nazwisko
 
@@ -2095,4 +2096,89 @@ from dao.invoice_dao import  * #fuuuuuu
 #
 # for lo in lista_obiektow:
 #     print(lo)
+
+
+#51. Załaduj dane z pliku dane.csv do postaci listy obiektów.
+# Następnie przeiteruj po tej liście i wyświetl zawartość każdego z obiektów
+#
+# class Player:
+#     def __init__(self,player_id,first_name,last_name,height,weight):
+#         self.player_id=player_id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# result=[]
+#
+# for f in [e.strip().split(';') for e in open('dane\\dane.csv',encoding='utf-8') if len(e.strip())>0]:
+#     p=Player(int(f[0]),f[1],f[2],float(f[3]),float(f[4]))
+#     result.append(p)
+#
+# #result=[Player(int(f[0]),f[1],f[2],float(f[3]),float(f[4])) for f in [e.strip().split(';') for e in open('dane\\dane.csv',encoding='utf-8') if len(e.strip())>0]]
+#
+# for r in result:
+#     print(r)
+
+
+# class Player:
+#     def __init__(self,player_id,first_name,last_name,height,weight):
+#         self.player_id=player_id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#         self.bmi=round(self.weight/pow(self.height,2),2)
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# result=[]
+#
+# for f in [e.strip().split(';') for e in open('dane\\dane.csv',encoding='utf-8') if len(e.strip())>0]:
+#     p=Player(int(f[0]),f[1],f[2],float(f[3]),float(f[4]))
+#     result.append(p)
+#
+# #result=[Player(int(f[0]),f[1],f[2],float(f[3]),float(f[4])) for f in [e.strip().split(';') for e in open('dane\\dane.csv',encoding='utf-8') if len(e.strip())>0]]
+#
+# for r in result:
+#     print(r)
+#
+# class Player:
+#     def __init__(self,player_id,first_name,last_name,height,weight):
+#         self.player_id=player_id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#         self.bmi=round(self.weight/pow(self.height,2),2)
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# result=[]
+#
+# for f in [e.strip().split(';') for e in open('dane\\dane.csv',encoding='utf-8') if len(e.strip())>0]:
+#     p=Player(int(f[0]),f[1],f[2],float(f[3]),float(f[4]))
+#     result.append(p)
+#
+# #result=[Player(int(f[0]),f[1],f[2],float(f[3]),float(f[4])) for f in [e.strip().split(';') for e in open('dane\\dane.csv',encoding='utf-8') if len(e.strip())>0]]
+# import cowsay
+# for r in result:
+#    cowsay.cow(r.__str__())
+
+
+#cowsay.cow('Lubię pierogi')
+
+
+
+
+#result=[Player(int(f[0]),f[1],f[2],float(f[3]),float(f[4])) for f in [e.strip().split(';') for e in open('dane\\dane.csv',encoding='utf-8') if len(e.strip())>0]]
+# import cowsay
+# for r in result:
+#    cowsay.cow(r.__str__())
+#
+# import player_dao as pdao
+# for e in pdao.get_all():
+#     print(e)
 
